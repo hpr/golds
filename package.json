@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "getGolds": "tsc --module nodenext --outDir build getGolds.mts && echo run && node --expose-gc build/getGolds.mjs"
+    "getGolds": "tsc --module nodenext --outDir build getGolds.mts && echo run && node build/getGolds.mjs",
+    "getTopEvents": "tsc --module nodenext --outDir build getTopEvents.mts && echo run && node build/getTopEvents.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
+    "cheerio": "^1.0.0-rc.10",
     "dotenv": "^16.3.1",
     "jsdom": "^22.1.0",
     "typescript": "^5.1.6"
